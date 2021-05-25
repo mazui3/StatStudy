@@ -1,4 +1,41 @@
 The data set we choose is **Loan Data from Prosper**.
+This data set contains 113,937 loans with 81 variables on each loan, including loan amount, borrower rate (or interest rate), current loan status, borrower income, and many others.
+
+>Main findings:
+> - **LoanStatus**:
+>The most loan status are **completed** and **current**.
+
+> - **BorrowerState**:
+>The most loan borrower state is **CA**.
+
+> - **EmploymentStatus**:
+>The most employment status is **employed**, then is **full-time**.
+
+>- **LoanStatus vs BorrowerState**:
+>The state have more loan are **CA**, **FL**, **IL**, **NY** and **TX**.
+All of them have more current loan, then completed loan.
+
+>- **LoanStatus vs EmploymentStatus**:
+>The largest amount of loan are belongs to **current+employed**. Then is **full-time+completed**, **completed+employed**.
+
+>- **LoanStatus vs EmploymentStatus vs BorrowerAPR**
+>Employed people are having a higher borrowerAPR than others in defaulted load status.
+
+>- **LoanStatus vs BorrowerAPR**:
+>We have **completed** loan status has lowest borrowerAPR. **PastDue** has the highest borrowerAPR.
+
+> - **BorrowerAPR vs BorrowerState**:
+The higher Borrower APR are from **AR** and **AL** and **MS**.
+The lower Borrower APR are from **ME** and **IA**.
+
+> - **BorrowerAPR vs EmploymentStatus**:
+The higher Borrower APR are from **not employed**.
+The lower Borrower APR are from **part-time**.
+
+> - **LoanStatus vs BorrowerState vs BorrowerAPR**:
+>AR has a higher borrower in defaulted load status.
+>AR and AL have a higher borrower AR in past due load status.
+>ME and IA in all load status are having a load borrower APR.
 
 # Exploratory Data
 ## Univariate Exploration
@@ -46,26 +83,26 @@ The most employment status is **employed**, then is **full-time**. More than 50%
 ### Employment status duration
 
 Employment status duration is a numerical variable.
-Employment status duration has a right-skewed distribution. With a mean of 96.07158175934984.
+Employment status duration has a right-skewed distribution. With a mean of 96.07158175934984. Approximately follows a log-normal distribution.
 
 
 ### DebtToIncomeRatio
 
 Debt to income ratio is a numerical variable.
-Debt to income ratio has a highly right-skewed distribution. With a mean of 0.2759466040063403.
+Debt to income ratio has a highly right-skewed distribution. With a mean of 0.2759466040063403. Approximately follows a log-normal distribution.
 
 
 ### StatedMonthlyIncome
 
-Stated monthly income is a right-skewed distribution.
+Stated monthly income is a right-skewed distribution. With a mean of 5608.025568224836. Does not follow a log-normal distribution.
 
 ### MonthlyLoanPayment
 
-Monthly loan payment is a right-skewed distribution.
+Monthly loan payment is a right-skewed distribution. With a mean of 272.47578310823104. Approximately follows a log-normal distribution.
 
 ### Investors
 
-Investors is a right-skewed distribution.
+Investors is a right-skewed distribution. With a mean of 80.4752275380254. Approximately follows a log-normal distribution.
 
 
 
